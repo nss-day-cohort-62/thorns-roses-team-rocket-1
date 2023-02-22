@@ -3,8 +3,8 @@ export const getNurseries =() => {
     .then(response => response.json())
 }
 
-export const getNurseryFlowers = () => {
-    return fetch (`http://localhost:8088/nurseryFlowers?_expand=flower`)
+export const getNurseryFlowers = ({nurseryId}) => {
+    return fetch (`http://localhost:8088/nurseryFlowers?_expand=flower&_expand=nursery&nurseryId=${nurseryId}`)
     .then(response => response.json())
 }
 
