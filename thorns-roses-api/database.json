@@ -1,0 +1,14 @@
+{ 
+"flowers": [
+    {"id":1, "color": "red", "species": "Dahlia"}
+],
+"nurseries": [
+    {"id":1, "businessName": "Gardens of Babylon"}
+],
+"distributors": [
+    {"id":1, "businessName": "Southern Distribution", "flowerMarkup": ".1"}
+],
+"retailers": [
+    {"id": 1, "businessName": "Flower Shop", "address": "2200 Flower Way", "flowerMarkup":".15" }
+]
+}
