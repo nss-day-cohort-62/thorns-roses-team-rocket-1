@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react"
 import { getNurseries } from "../ApiManager"
 import { Nursery } from "./Nursery"
-import { getNurseryFlowers } from "../ApiManager"
+
 
 export const NurseryList = () => {
     const [nurseries, setNurseries] = useState([])
-    const [flowers, setFlowers] = useState([])
+    
 
     useEffect(
         () => {
@@ -16,24 +16,11 @@ export const NurseryList = () => {
             })
         },[]
     )
-    
 
-    useEffect(
-        () => {
-            getNurseryFlowers()
-            .then((flowersArray) => {
-                setFlowers(flowersArray)
-                console.log(flowers)
-            })
-        },[nurseries]
-       )
+
     
     
-
-
-
-
-
+    
 
     return <>
     <ul>
@@ -43,7 +30,7 @@ export const NurseryList = () => {
             nurseryId={nursery.id}
             nurseryName={nursery.businessName}
             nurseryObject={nursery}
-            flowers={flowers} />
+             />
         )
     }
     </ul>
