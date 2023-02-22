@@ -12,25 +12,29 @@
     {"id":3, "businessName": "Gardens of Heaven"}
 ],
 "distributors": [
-    {"id":1, "businessName": "Southern Distribution", "flowerMarkup": ".1"}
+    {"id":1, "businessName": "Southern Distribution", "flowerMarkup": 1.1},
+    {"id":2, "businessName": "Northern Distribution", "flowerMarkup": 1.1},
+    {"id":3, "businessName": "Western Distribution", "flowerMarkup": 1.1}
 ],
 "retailers": [
-    {"id": 1, "businessName": "Flower Shop", "address": "2200 Flower Way", "flowerMarkup":".15" }
+    {"id": 1, "businessName": "Flower Shop", "address": "2200 Flower Way", "flowerMarkup":1.15 }
 ],
 "nurseryFlowers": [
-    {"id":1, "flowerId": 1, "nurseryId": 1, "flowerPrice": "3.50"},
-    {"id":2, "flowerId": 2, "nurseryId": 1, "flowerPrice": "3.50"},
-    {"id":3, "flowerId": 4, "nurseryId": 1, "flowerPrice": "3.50"},
-    {"id":4, "flowerId": 2, "nurseryId": 2, "flowerPrice": "3.50"},
-    {"id":5, "flowerId": 5, "nurseryId": 2, "flowerPrice": "3.50"},
-    {"id":6, "flowerId": 1, "nurseryId": 2, "flowerPrice": "3.50"},
-    {"id":7, "flowerId": 3, "nurseryId": 3, "flowerPrice": "3.50"},
-    {"id":8, "flowerId": 2, "nurseryId": 3, "flowerPrice": "3.50"},
-    {"id":9, "flowerId": 4, "nurseryId": 3, "flowerPrice": "3.50"}
+    {"id":1, "flowerId": 1, "nurseryId": 1, "flowerPrice": 3.50},
+    {"id":2, "flowerId": 2, "nurseryId": 1, "flowerPrice": 3.50},
+    {"id":3, "flowerId": 4, "nurseryId": 1, "flowerPrice": 3.50},
+    {"id":4, "flowerId": 2, "nurseryId": 2, "flowerPrice": 3.50},
+    {"id":5, "flowerId": 5, "nurseryId": 2, "flowerPrice": 3.50},
+    {"id":6, "flowerId": 1, "nurseryId": 2, "flowerPrice": 3.50},
+    {"id":7, "flowerId": 3, "nurseryId": 3, "flowerPrice": 3.50},
+    {"id":8, "flowerId": 2, "nurseryId": 3, "flowerPrice": 3.50},
+    {"id":9, "flowerId": 4, "nurseryId": 3, "flowerPrice": 3.50}
 
 ],
 "nurseryDistributors": [
-    {"id":1, "nurseryId": 1, "distributorId": 1}
+    {"id":1, "nurseryId": 1, "distributorId": 1},
+    {"id":2, "nurseryId": 1, "distributorId": 2},
+    {"id":3, "nurseryId": 2, "distributorId": 3}
 ]
 
 }
