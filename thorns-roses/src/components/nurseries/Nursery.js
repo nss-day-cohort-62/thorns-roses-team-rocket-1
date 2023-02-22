@@ -1,33 +1,43 @@
 import { useEffect,useState } from "react"
-import { getNurseryFlowers } from "../ApiManager"
+import { getNurseryDistributors, getNurseryFlowers } from "../ApiManager"
 
 
 export const Nursery = ({nurseryId, nurseryName}) => {
     const [flowers, setFlowers] = useState([])
- 
+    const [nurseryDistributors, setNurseryDistributors] = useState([])
 
     useEffect(
         () => {
-            if(nurseryId){
+            
             getNurseryFlowers({nurseryId})
             .then((flowersArray) => {
                 setFlowers(flowersArray)
-                console.log(flowers)
 
-            })}
-            else {
-                
-            }
+
+            })
+        },[]
+       )
+       useEffect(
+        () => {
+            getNurseryDistributors({nurseryId})
+            .then((nurseryDistributorsArray) => {
+                setNurseryDistributors(nurseryDistributorsArray)
+
+            })
         },[]
        )
 
-
     return <>
-    <li>
+    <li className="m-5">
     <h2>{nurseryName}</h2>
-    { flowers.map(flower => {
-       return <p>{flower?.flower?.color} {flower?.flower?.species}</p>
+    { flowers.map(nurseryFlower => {
+       return <p>{nurseryFlower?.flower?.color} {nurseryFlower?.flower?.species}</p>
     })}
+    {
+        nurseryDistributors.map(nurseryDistributor => {
+            return <p>{nurseryDistributor?.distributor?.businessName}</p>
+        })
+    }
        </li>
        
     </>
