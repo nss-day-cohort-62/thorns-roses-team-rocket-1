@@ -38,7 +38,8 @@ export const Retailer = ({distributorId, retailer}) => {
             const PurchaseToSendToApi = {
                 customerId: thornUserObject.id,
                 retailerId: retailer.id,
-                flowerId: flower?.flower?.id
+                flowerId: flower?.flower?.id,
+                flowerPrice: parseFloat(flower?.flowerPrice, 2)
             }
             AddNewPurchase(PurchaseToSendToApi)
                 
