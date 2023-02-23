@@ -37,3 +37,31 @@ export const getAllNurseryFlowers = () => {
     return fetch(`http://localhost:8088/nurseryFlowers?_expand=flower&_expand=nursery`)
     .then(response => response.json())
 }
+export const getRegister = (customer) => {
+    return fetch("http://localhost:8088/customers", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(customer)
+        })
+            .then(res => res.json())
+    }
+    export const findEmail = (customer) => {
+        return fetch(`http://localhost:8088/customers?email=${customer.email}`)
+                .then(res => res.json())
+    }
+    export const getLogin = (email, password) => {
+        return fetch(`http://localhost:8088/customers?email=${email}&password=${password}`)
+                .then(res => res.json())
+    }
+    export const AddNewPurchase = (PurchaseToSendToApi) => {
+        return fetch("http://localhost:8088/cart", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(PurchaseToSendToApi)
+            })
+                .then(res => res.json())
+        }

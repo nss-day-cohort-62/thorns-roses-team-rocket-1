@@ -18,9 +18,12 @@ return (
 			<li className="navbar__item">
 			<Link to="/retailers">Retailers</Link>
 			</li>
-			
-	
-       
+			<li className="navbar__item navbar__logout">
+                        <Link className="navbar__link" to="" onClick={() => {
+                            localStorage.removeItem("thorns_user")
+                            navigate("/", {replace: true})
+                        }}>Logout</Link>
+                    </li> 
     </ul>
 )
         }
