@@ -9,7 +9,7 @@ export const Nursery = ({nurseryId, nurseryName}) => {
     useEffect(
         () => {
             
-            getNurseryFlowers({nurseryId})
+            getNurseryFlowers(nurseryId)
             .then((flowersArray) => {
                 setFlowers(flowersArray)
 
@@ -19,7 +19,7 @@ export const Nursery = ({nurseryId, nurseryName}) => {
        )
        useEffect(
         () => {
-            getNurseryDistributors({nurseryId})
+            getNurseryDistributors(nurseryId)
             .then((nurseryDistributorsArray) => {
                 setNurseryDistributors(nurseryDistributorsArray)
 
