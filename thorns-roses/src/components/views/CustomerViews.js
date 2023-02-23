@@ -9,7 +9,7 @@ export const CustomerViews = () => {
         <Routes>
             <Route path="/" element={
                 <>
-          
+                    <h1>Thorns and Roses</h1>
                     
 
                     <Outlet />

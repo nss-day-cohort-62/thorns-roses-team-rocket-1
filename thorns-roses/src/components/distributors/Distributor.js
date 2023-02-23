@@ -34,7 +34,7 @@ export const Distributor = ({ name, nurseryId, markUpPrice, distributorId}) => {
         <h2>{name}</h2>
         {
             flowers.map(nurseryFlower => {
-                return <p>{nurseryFlower?.flowerPrice}</p>
+                return <p>{nurseryFlower?.flower?.color} {nurseryFlower?.flower?.species} {nurseryFlower?.flowerPrice}</p>
             })
             
         }

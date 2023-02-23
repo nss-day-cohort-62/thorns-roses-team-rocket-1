@@ -1,44 +1,218 @@
-{ 
-"flowers": [
-    {"id":1, "color": "Red", "species": "Dahlia"},
-    {"id":2, "color": "Black", "species": "Zinnia"},
-    {"id":3, "color": "Blue", "species": "Sunflower"},
-    {"id":4, "color": "Yellow", "species": "Marigold"},
-    {"id":5, "color": "Purple", "species": "Rose"}
-],
-"nurseries": [
-    {"id":1, "businessName": "Gardens of Babylon"},
-    {"id":2, "businessName": "Gardens of Hell"},
-    {"id":3, "businessName": "Gardens of Heaven"}
-],
-"distributors": [
-    {"id":1, "businessName": "Southern Distribution", "flowerMarkup": 1.1},
-    {"id":2, "businessName": "Northern Distribution", "flowerMarkup": 1.1},
-    {"id":3, "businessName": "Western Distribution", "flowerMarkup": 1.1}
-],
-"retailers": [
-    {"id": 1, "businessName": "Flower Shop", "address": "2200 Flower Way", "flowerMarkup":1.15, "distributorId": 1},
-    {"id": 2, "businessName": "The Lotus", "address": "674 Elvis Flats", "flowerMarkup":1.15, "distributorId": 2},
-    {"id": 3, "businessName": "Flowers-R-Us", "address": "0392 Estelle Oval", "flowerMarkup":1.15, "distributorId": 3},
-    {"id": 4, "businessName": "Flowers", "address": "123 Main Street", "flowerMarkup":1.15, "distributorId": 1}
-],
-"nurseryFlowers": [
-    {"id":1, "flowerId": 1, "nurseryId": 1, "flowerPrice": 3.50},
-    {"id":2, "flowerId": 2, "nurseryId": 1, "flowerPrice": 3.50},
-    {"id":3, "flowerId": 4, "nurseryId": 1, "flowerPrice": 3.50},
-    {"id":4, "flowerId": 2, "nurseryId": 2, "flowerPrice": 3.50},
-    {"id":5, "flowerId": 5, "nurseryId": 2, "flowerPrice": 3.50},
-    {"id":6, "flowerId": 1, "nurseryId": 2, "flowerPrice": 3.50},
-    {"id":7, "flowerId": 3, "nurseryId": 3, "flowerPrice": 3.50},
-    {"id":8, "flowerId": 2, "nurseryId": 3, "flowerPrice": 3.50},
-    {"id":9, "flowerId": 4, "nurseryId": 3, "flowerPrice": 3.50}
-
-],
-"nurseryDistributors": [
-    {"id":1, "nurseryId": 1, "distributorId": 1},
-    {"id":2, "nurseryId": 1, "distributorId": 2},
-    {"id":3, "nurseryId": 2, "distributorId": 3},
-    {"id":3, "nurseryId": 2, "distributorId": 1}
-]
-
+{
+  "flowers": [
+    {
+      "id": 1,
+      "color": "Red",
+      "species": "Dahlia"
+    },
+    {
+      "id": 2,
+      "color": "Black",
+      "species": "Zinnia"
+    },
+    {
+      "id": 3,
+      "color": "Blue",
+      "species": "Sunflower"
+    },
+    {
+      "id": 4,
+      "color": "Yellow",
+      "species": "Marigold"
+    },
+    {
+      "id": 5,
+      "color": "Purple",
+      "species": "Rose"
+    }
+  ],
+  "nurseries": [
+    {
+      "id": 1,
+      "businessName": "Gardens of Babylon"
+    },
+    {
+      "id": 2,
+      "businessName": "Gardens of Hell"
+    },
+    {
+      "id": 3,
+      "businessName": "Gardens of Heaven"
+    }
+  ],
+  "distributors": [
+    {
+      "id": 1,
+      "businessName": "Southern Distribution",
+      "flowerMarkup": 1.1
+    },
+    {
+      "id": 2,
+      "businessName": "Northern Distribution",
+      "flowerMarkup": 1.1
+    },
+    {
+      "id": 3,
+      "businessName": "Western Distribution",
+      "flowerMarkup": 1.1
+    }
+  ],
+  "retailers": [
+    {
+      "id": 1,
+      "businessName": "Flower Shop",
+      "address": "2200 Flower Way",
+      "flowerMarkup": 1.15,
+      "distributorId": 1
+    },
+    {
+      "id": 2,
+      "businessName": "The Lotus",
+      "address": "674 Elvis Flats",
+      "flowerMarkup": 1.15,
+      "distributorId": 2
+    },
+    {
+      "id": 3,
+      "businessName": "Flowers-R-Us",
+      "address": "0392 Estelle Oval",
+      "flowerMarkup": 1.15,
+      "distributorId": 3
+    },
+    {
+      "id": 4,
+      "businessName": "Flowers",
+      "address": "123 Main Street",
+      "flowerMarkup": 1.15,
+      "distributorId": 1
+    }
+  ],
+  "nurseryFlowers": [
+    {
+      "id": 1,
+      "flowerId": 1,
+      "nurseryId": 1,
+      "flowerPrice": 3.5
+    },
+    {
+      "id": 2,
+      "flowerId": 2,
+      "nurseryId": 1,
+      "flowerPrice": 3.5
+    },
+    {
+      "id": 3,
+      "flowerId": 4,
+      "nurseryId": 1,
+      "flowerPrice": 3.5
+    },
+    {
+      "id": 4,
+      "flowerId": 2,
+      "nurseryId": 2,
+      "flowerPrice": 3.5
+    },
+    {
+      "id": 5,
+      "flowerId": 5,
+      "nurseryId": 2,
+      "flowerPrice": 3.5
+    },
+    {
+      "id": 6,
+      "flowerId": 1,
+      "nurseryId": 2,
+      "flowerPrice": 3.5
+    },
+    {
+      "id": 7,
+      "flowerId": 3,
+      "nurseryId": 3,
+      "flowerPrice": 3.5
+    },
+    {
+      "id": 8,
+      "flowerId": 2,
+      "nurseryId": 3,
+      "flowerPrice": 3.5
+    },
+    {
+      "id": 9,
+      "flowerId": 4,
+      "nurseryId": 3,
+      "flowerPrice": 3.5
+    }
+  ],
+  "nurseryDistributors": [
+    {
+      "id": 1,
+      "nurseryId": 1,
+      "distributorId": 1
+    },
+    {
+      "id": 2,
+      "nurseryId": 1,
+      "distributorId": 2
+    },
+    {
+      "id": 3,
+      "nurseryId": 2,
+      "distributorId": 3
+    },
+    {
+      "id": 3,
+      "nurseryId": 2,
+      "distributorId": 1
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "name": "Hannah Collins",
+      "businessName": "Hannah's Weddings",
+      "email": "hannah@gmail.com",
+      "password": "hannah"
+    },
+    {
+      "id": 2,
+      "name": "Vision Filler",
+      "businessName": "Three Funerals and a Wedding",
+      "email": "vision@gmail.com",
+      "password": "vision"
+    },
+    {
+      "id": 3,
+      "name": "Jackson Henderson",
+      "businessName": "Why Waste your Money?",
+      "email": "jackson@gmail.com",
+      "password": "jackson"
+    },
+    {
+      "email": "ada@gmail.com",
+      "name": "Ada Blaney",
+      "businessName": "Ada Forever",
+      "password": "ada",
+      "id": 4
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "customerId": 1,
+      "retailerId": 1,
+      "flowerId": 1
+    },
+    {
+      "customerId": 1,
+      "retailerId": 1,
+      "flowerId": 1,
+      "id": 2
+    },
+    {
+      "customerId": 1,
+      "retailerId": 4,
+      "flowerId": 2,
+      "id": 3
+    }
+  ]
 }
