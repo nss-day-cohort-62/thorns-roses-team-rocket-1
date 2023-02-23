@@ -197,22 +197,60 @@
   ],
   "cart": [
     {
-      "id": 1,
-      "customerId": 1,
+      "customerId": 2,
       "retailerId": 1,
-      "flowerId": 1
+      "flowerId": 4,
+      "flowerPrice": 4.43,
+      "id": 1
     },
     {
-      "customerId": 1,
+      "customerId": 2,
       "retailerId": 1,
       "flowerId": 1,
+      "flowerPrice": 4.43,
       "id": 2
     },
     {
-      "customerId": 1,
-      "retailerId": 4,
-      "flowerId": 2,
+      "customerId": 2,
+      "retailerId": 1,
+      "flowerId": 1,
+      "flowerPrice": 4.43,
       "id": 3
+    },
+    {
+      "customerId": 2,
+      "retailerId": 1,
+      "flowerId": 1,
+      "flowerPrice": 4.43,
+      "id": 4
+    },
+    {
+      "customerId": 2,
+      "retailerId": 2,
+      "flowerId": 1,
+      "flowerPrice": 4.43,
+      "id": 5
+    },
+    {
+      "customerId": 2,
+      "retailerId": 2,
+      "flowerId": 2,
+      "flowerPrice": 4.43,
+      "id": 6
+    },
+    {
+      "customerId": 2,
+      "retailerId": 2,
+      "flowerId": 2,
+      "flowerPrice": 4.43,
+      "id": 7
+    },
+    {
+      "customerId": 2,
+      "retailerId": 3,
+      "flowerId": 1,
+      "flowerPrice": 4.43,
+      "id": 8
     }
   ]
 }

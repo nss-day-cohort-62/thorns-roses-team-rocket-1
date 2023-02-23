@@ -65,3 +65,8 @@ export const getRegister = (customer) => {
             })
                 .then(res => res.json())
         }
+
+    export const getPurchasedFlowers = (customerId) => {
+        return fetch (`http://localhost:8088/cart?_expand=flower&customerId=${customerId}`)
+        .then(res => res.json())
+    }
