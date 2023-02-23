@@ -1,39 +1,46 @@
 import { useEffect, useState } from "react"
-import { getNurseryFlowers } from "../ApiManager"
+import { getNurseryFlowers, getRetailers } from "../ApiManager"
 
-export const Distributor = ({ name, nurseryId, markUpPrice}) => {
+export const Distributor = ({ name, nurseryId, markUpPrice, distributorId}) => {
     const[flowers, setFlowers] = useState([])
+    const [retailers, setRetailers] = useState([])
 
     useEffect(
         () => {
-            getNurseryFlowers({nurseryId})
+            getNurseryFlowers(nurseryId)
             .then((flowersArray) => {
                 flowersArray.forEach(nurseryFlower => {
-                   Math.ceil(nurseryFlower.flowerPrice *= markUpPrice)
+                   const newFlowerPrice = markUpPrice * nurseryFlower.flowerPrice
+                   nurseryFlower.flowerPrice = newFlowerPrice.toFixed(2)
                   })
                   setFlowers(flowersArray)
                     }) 
+            },
+            []
+        )
+    useEffect(
+        () => {
+            getRetailers(distributorId)
+            .then((retailerArray) => {
+                setRetailers(retailerArray)
             })
-
+        },
+        [distributorId]
+    )
     
-
-    // useEffect(
-    //     () => {
-            
-    //       flowers.forEach(nurseryFlower => {
-    //         parseFloat(nurseryFlower?.flower?.price) *= parseFloat(markUpPrice)
-    //       })
-    //       setFlowers(flowers)
-    //         })
-    //     },[]
-    //    )
 
     return <>
     <li>
         <h2>{name}</h2>
         {
             flowers.map(nurseryFlower => {
-                return <p>{nurseryFlower.flowerPrice}</p>
+                return <p>{nurseryFlower?.flowerPrice}</p>
+            })
+            
+        }
+        {
+            retailers.map(retailer => {
+                return <p>{retailer?.businessName}</p>
             })
         }
 

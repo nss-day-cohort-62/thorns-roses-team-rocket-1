@@ -17,7 +17,10 @@
     {"id":3, "businessName": "Western Distribution", "flowerMarkup": 1.1}
 ],
 "retailers": [
-    {"id": 1, "businessName": "Flower Shop", "address": "2200 Flower Way", "flowerMarkup":1.15 }
+    {"id": 1, "businessName": "Flower Shop", "address": "2200 Flower Way", "flowerMarkup":1.15, "distributorId": 1},
+    {"id": 2, "businessName": "The Lotus", "address": "674 Elvis Flats", "flowerMarkup":1.15, "distributorId": 2},
+    {"id": 3, "businessName": "Flowers-R-Us", "address": "0392 Estelle Oval", "flowerMarkup":1.15, "distributorId": 3},
+    {"id": 4, "businessName": "Flowers", "address": "123 Main Street", "flowerMarkup":1.15, "distributorId": 1}
 ],
 "nurseryFlowers": [
     {"id":1, "flowerId": 1, "nurseryId": 1, "flowerPrice": 3.50},
@@ -34,7 +37,8 @@
 "nurseryDistributors": [
     {"id":1, "nurseryId": 1, "distributorId": 1},
     {"id":2, "nurseryId": 1, "distributorId": 2},
-    {"id":3, "nurseryId": 2, "distributorId": 3}
+    {"id":3, "nurseryId": 2, "distributorId": 3},
+    {"id":3, "nurseryId": 2, "distributorId": 1}
 ]
 
 }
