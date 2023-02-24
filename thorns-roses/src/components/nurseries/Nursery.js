@@ -28,15 +28,15 @@ export const Nursery = ({nurseryId, nurseryName}) => {
        )
 
     return <>
-    <li className="m-5">
-    <h2>{nurseryName}:</h2>
+    <li className="card">
+    <h2 className="title">{nurseryName}</h2>
     { flowers.map(nurseryFlower => {
        return <p>{nurseryFlower?.flower?.color} {nurseryFlower?.flower?.species}</p>
     })}
-    <h2>Distributors:</h2>
+    <h2 className="mt-2 font-semibold">Distributors</h2>
     {
         nurseryDistributors.map(nurseryDistributor => {
-            return <p>{nurseryDistributor?.distributor?.businessName}</p>
+            return <p className="">{nurseryDistributor?.distributor?.businessName}</p>
         })
     }
        </li>

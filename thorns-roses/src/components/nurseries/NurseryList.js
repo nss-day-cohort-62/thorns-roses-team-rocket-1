@@ -23,7 +23,7 @@ export const NurseryList = () => {
     
 
     return <>
-    <ul className="font-body">
+    <ul className="list flex row ">
     {
         nurseries.map(nursery => 
             <Nursery
@@ -34,5 +34,6 @@ export const NurseryList = () => {
         )
     }
     </ul>
+
     </>
 }

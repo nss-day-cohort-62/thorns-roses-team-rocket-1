@@ -18,7 +18,7 @@ export const CustomerNav = () => {
 
 return <>
  
-    <ul className=" fixed w-full flex row justify-evenly font-body">
+    <ul className=" fixed w-full flex row justify-evenly font-body bg-gray-300">
        
         <li className="navbar__item">
 			<Link to="/nurseries">Nurseries</Link>

@@ -6,7 +6,13 @@ module.exports = {
       fontFamily: {
         body: ['Nanum Myeongjo']
       },
-      fontBorder: {}
+      colors: {
+        primary: '#DEC9C0',
+        secondary:'#9F8B5D',
+        third: '#3C4A1C',
+        fourth: '#86BFE8',
+        fifth: '#6BAADC'
+      }
     },
   },
   plugins: [],

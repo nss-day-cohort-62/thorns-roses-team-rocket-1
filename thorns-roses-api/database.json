@@ -60,7 +60,12 @@
       "id": 3,
       "businessName": "Western Distribution",
       "flowerMarkup": 1.1
-    }
+    },
+    {
+        "id": 4,
+        "businessName": "Eastern Distribution",
+        "flowerMarkup": 1.1
+      }
   ],
   "retailers": [
     {
@@ -168,7 +173,12 @@
       "id": 3,
       "nurseryId": 2,
       "distributorId": 1
-    }
+    },
+    {
+        "id": 4,
+        "nurseryId": 3,
+        "distributorId": 4
+      }
   ],
   "customers": [
     {
