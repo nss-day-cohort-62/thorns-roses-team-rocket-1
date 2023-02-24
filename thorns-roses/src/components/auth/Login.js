@@ -29,40 +29,39 @@ export const Login = () => {
     }
 
     return (
-        <main className="container--login font-body text-white shadow text-center img p-20">
+        <main className="container--login font-body shadow text-center img m-16 p-40 border-8 rounded border-black flex justify-center">
             <section>
-                <form className="form--login" onSubmit={handleLogin}>
-                    <h1 className="font-bold text-5xl p-5 font-outline-2">Thorns and Roses</h1>
-                    <div className="text-left p-5">
+                <form className="bg-gray-200 w-full bg-opacity-50 rounded pb-5 pt-2" onSubmit={handleLogin}>
+                    <h1 className="font-bold text-4xl font-outline-2 shadow-lg">Thorns and Roses</h1>
+                    <div className="text-center p-5">
                     <fieldset className="mb-5">
                         <label htmlFor="inputEmail"> Email address </label>
-                        <input type="email"
+                        <input className="text-black rounded" type="email"
                             value={email}
                             onChange={evt => set(evt.target.value)}
-                            className="form-control"
                             placeholder="Email address"
                             required autoFocus />
                     </fieldset>
                     <fieldset>
                         <label htmlFor="inputPassword"> Password </label>
-                        <input type="password"
+                        <input className="text-black rounded" type="password"
                             value={password}
                             onChange={evt => setPassword(evt.target.value)}
-                            className="form-control"
                             placeholder="Password"
                             required autoFocus />
                     </fieldset>
                     </div>
-                    <fieldset>
-                        <button className="btn" type="submit">
+                    <fieldset className="flex row justify-center">
+                        <button className="btn mr-4" type="submit">
                             Sign in
                         </button>
+                        <button className="link--register ">
+                            <Link className= "btn" to="/register">Not a member yet?</Link>
+                     </button>
                     </fieldset>
                 </form>
             </section>
-            <section className="link--register ">
-                <Link className= "border-b border-blue-500 text-blue-500" to="/register">Not a member yet?</Link>
-            </section>
+            
         </main>
     )
 }

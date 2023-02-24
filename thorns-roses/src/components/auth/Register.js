@@ -48,9 +48,9 @@ export const Register = (props) => {
     }
 
     return (
-        <main className="font-body" style={{ textAlign: "center" }}>
-            <form className="form--login" onSubmit={handleRegister}>
-                <h1>Please Register for Thorns and Roses</h1>
+        <main className="font-body shadow text-center img m-16 p-40 border-8 rounded border-black flex justify-center" style={{ textAlign: "center" }}>
+            <form className="bg-gray-200 w-3/5 bg-opacity-50 rounded" onSubmit={handleRegister}>
+                <h1 className="font-bold text-4xl mb-4 shadow-lg">Please Register for Thorns and Roses</h1>
                 <fieldset>
                     <label htmlFor="fullName"> Name </label>
                     <input onChange={updateUser}
@@ -70,13 +70,13 @@ export const Register = (props) => {
                         placeholder="Email address" required />
                 </fieldset>
                 <fieldset>
-                    <label htmlFor="password"> Password</label>
+                    <label htmlFor="password"> Password </label>
                     <input onChange={updateUser}
                         type="password" id="password" className="form-control"
                         placeholder="Password" required />
                 </fieldset>
                 <fieldset>
-                    <button type="submit"> Register </button>
+                    <button className="btn m-2" type="submit"> Register </button>
                 </fieldset>
             </form>
         </main>

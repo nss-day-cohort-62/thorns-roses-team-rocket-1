@@ -30,8 +30,8 @@ export const Distributor = ({ name, nurseryId, markUpPrice, distributorId}) => {
     
 
     return <>
-    <li className="m-5">
-        <h2>{name}</h2>
+    <li className="card">
+        <h2 className="title">{name}</h2>
         { flowers.map(nurseryFlower => {
                 return <p>{nurseryFlower?.flower?.color} {nurseryFlower?.flower?.species} {nurseryFlower?.flowerPrice}</p>
             })

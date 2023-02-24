@@ -20,7 +20,7 @@ export const DistributorList = () => {
     
 
     return <>
-    <ul className="font-body">
+    <ul className="list flex row">
     {
         distributors.map(nurseryDistributor => 
             <Distributor
