@@ -1,3 +1,4 @@
+import { createContext, useContext, useEffect, useMemo, useState } from "react"
 import { Route, Routes } from "react-router-dom"
 import { Login } from "./components/auth/Login"
 import { Register } from "./components/auth/Register"
@@ -10,19 +11,37 @@ import { Authorized } from "./components/views/Authorized"
 
 
 
+
 export const ThornsAndRoses = () => {
-	return <Routes>
-		<Route path="/login" element={<Login />} />
-		<Route path="/register" element={<Register />} />
+	
 
-		<Route path="*" element={
-			<Authorized>
-				<>
-				<NavBar />
-        		<ApplicationViews />
-				</>
-			</Authorized>
 
-		} />
-	</Routes>
+
+
+
+	return (
+
+
+		<>
+			<Routes>
+				<Route path="/login" element={<Login />} />
+				<Route path="/register" element={<Register />} />
+				<Route path="*" element={
+				<Authorized>
+					<>
+
+						<ApplicationViews />
+					</>
+				</Authorized>
+
+			} />
+			</Routes>
+
+		</>
+
+
+	);
 }
+
+
+

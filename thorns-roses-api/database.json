@@ -3,27 +3,32 @@
     {
       "id": 1,
       "color": "Red",
-      "species": "Dahlia"
+      "species": "Dahlia",
+      "image": "https://th.bing.com/th/id/R.58f9e57bdf546db266d619818e2bb0ed?rik=F0ceh%2boqVsVpsQ&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f1419%2f7120%2fproducts%2fDahlia_Gallery_Singer_2_.SHUT.jpg%3fv%3d1582222857&ehk=GaKEzyFG9wtnWcvFQzBlfWXeyvKVC5KayOwwSwM8PbU%3d&risl=&pid=ImgRaw&r=0"
     },
     {
       "id": 2,
-      "color": "Black",
-      "species": "Zinnia"
+      "color": "Burgundy",
+      "species": "Zinnia",
+      "image": "https://s-media-cache-ak0.pinimg.com/736x/2e/e6/f1/2ee6f1e20d29af66bb22fb81669c8f4e.jpg"
     },
     {
       "id": 3,
       "color": "Blue",
-      "species": "Sunflower"
+      "species": "Sunflower",
+      "image": "https://i.etsystatic.com/35606551/r/il/177c14/4140523117/il_1588xN.4140523117_7d3k.jpg"
     },
     {
       "id": 4,
       "color": "Yellow",
-      "species": "Marigold"
+      "species": "Marigold",
+      "image": "https://gardenseedsmarket.com/images/detailed/27/shutterstock_174218558.jpg"
     },
     {
       "id": 5,
       "color": "Purple",
-      "species": "Rose"
+      "species": "Rose",
+      "image": "https://2.bp.blogspot.com/-Kp3ZxPLhGSU/T7NGZy_7ilI/AAAAAAAAA6I/I4YFAy8Kikk/s1600/purple+rose.jpg"
     }
   ],
   "nurseries": [
@@ -199,14 +204,14 @@
     {
       "customerId": 2,
       "retailerId": 1,
-      "flowerId": 4,
+      "flowerId": 2,
       "flowerPrice": 4.43,
       "id": 1
     },
     {
       "customerId": 2,
       "retailerId": 1,
-      "flowerId": 1,
+      "flowerId": 5,
       "flowerPrice": 4.43,
       "id": 2
     },
@@ -219,7 +224,7 @@
     },
     {
       "customerId": 2,
-      "retailerId": 1,
+      "retailerId": 2,
       "flowerId": 1,
       "flowerPrice": 4.43,
       "id": 4
@@ -232,25 +237,88 @@
       "id": 5
     },
     {
-      "customerId": 2,
+      "customerId": 1,
       "retailerId": 2,
       "flowerId": 2,
       "flowerPrice": 4.43,
       "id": 6
     },
     {
-      "customerId": 2,
+      "customerId": 1,
       "retailerId": 2,
-      "flowerId": 2,
+      "flowerId": 4,
       "flowerPrice": 4.43,
       "id": 7
     },
     {
-      "customerId": 2,
+      "customerId": 1,
       "retailerId": 3,
-      "flowerId": 1,
+      "flowerId": 5,
       "flowerPrice": 4.43,
       "id": 8
+    },
+    {
+      "customerId": 1,
+      "retailerId": 3,
+      "flowerId": 5,
+      "flowerPrice": 4.43,
+      "id": 9
+    },
+    {
+      "customerId": 1,
+      "retailerId": 3,
+      "flowerId": 5,
+      "flowerPrice": 4.43,
+      "id": 10
+    },
+    {
+      "customerId": 1,
+      "retailerId": 3,
+      "flowerId": 5,
+      "flowerPrice": 4.43,
+      "id": 11
+    },
+    {
+      "customerId": 1,
+      "retailerId": 3,
+      "flowerId": 5,
+      "flowerPrice": 4.43,
+      "id": 12
+    },
+    {
+      "customerId": 1,
+      "retailerId": 3,
+      "flowerId": 5,
+      "flowerPrice": 4.43,
+      "id": 13
+    },
+    {
+      "customerId": 1,
+      "retailerId": 3,
+      "flowerId": 5,
+      "flowerPrice": 4.43,
+      "id": 14
+    },
+    {
+      "customerId": 1,
+      "retailerId": 3,
+      "flowerId": 5,
+      "flowerPrice": 4.43,
+      "id": 15
+    },
+    {
+      "customerId": 1,
+      "retailerId": 3,
+      "flowerId": 5,
+      "flowerPrice": 4.43,
+      "id": 16
+    },
+    {
+      "customerId": 1,
+      "retailerId": 3,
+      "flowerId": 5,
+      "flowerPrice": 4.43,
+      "id": 17
     }
   ]
 }
