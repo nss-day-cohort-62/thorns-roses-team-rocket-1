@@ -29,12 +29,12 @@ export const Login = () => {
     }
 
     return (
-        <main className="container--login">
+        <main className="container--login font-body text-white shadow text-center img p-20">
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1>Thorns and Roses</h1>
-                    <h2>Please sign in</h2>
-                    <fieldset>
+                    <h1 className="font-bold text-5xl p-5 font-outline-2">Thorns and Roses</h1>
+                    <div className="text-left p-5">
+                    <fieldset className="mb-5">
                         <label htmlFor="inputEmail"> Email address </label>
                         <input type="email"
                             value={email}
@@ -52,15 +52,16 @@ export const Login = () => {
                             placeholder="Password"
                             required autoFocus />
                     </fieldset>
+                    </div>
                     <fieldset>
-                        <button type="submit">
+                        <button className="btn" type="submit">
                             Sign in
                         </button>
                     </fieldset>
                 </form>
             </section>
-            <section className="link--register">
-                <Link to="/register">Not a member yet?</Link>
+            <section className="link--register ">
+                <Link className= "border-b border-blue-500 text-blue-500" to="/register">Not a member yet?</Link>
             </section>
         </main>
     )

@@ -23,7 +23,7 @@ export const NurseryList = () => {
     
 
     return <>
-    <ul>
+    <ul className="font-body">
     {
         nurseries.map(nursery => 
             <Nursery

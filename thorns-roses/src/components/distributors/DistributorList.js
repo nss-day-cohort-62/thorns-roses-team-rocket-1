@@ -18,13 +18,9 @@ export const DistributorList = () => {
         },[]
     )
     
-        
-    
-    
-    
 
     return <>
-    <ul>
+    <ul className="font-body">
     {
         distributors.map(nurseryDistributor => 
             <Distributor

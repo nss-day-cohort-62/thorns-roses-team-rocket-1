@@ -1,11 +1,14 @@
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
+
 import { AddNewPurchase, getNurseryDistributorsByDistributorId, getNurseryFlowers } from "../ApiManager"
+import { OrderContext } from "../views/ApplicationViews"
 
 export const Retailer = ({distributorId, retailer}) => {
     const [nurseryDistributors, setNurseryDistributors] = useState([])
     const [flowers, setNurseryFlowers] = useState([])
     const localThornUser = localStorage.getItem("thorns_user")
     const thornUserObject = JSON.parse(localThornUser)
+    const {orderLength, setOrderLength} = useContext(OrderContext)
     useEffect(
         () => {
             
@@ -39,14 +42,24 @@ export const Retailer = ({distributorId, retailer}) => {
                 customerId: thornUserObject.id,
                 retailerId: retailer.id,
                 flowerId: flower?.flower?.id,
-                flowerPrice: parseFloat(flower?.flowerPrice, 2)
+                flowerPrice: parseFloat(flower?.flowerPrice,2)
             }
             AddNewPurchase(PurchaseToSendToApi)
                 
+                setOrderLength(orderLength + 1)
         }
+       
+
+
+
+
+
+
+
+
 
     return <>
-        <li>
+        <li className="m-5">
             <p>{retailer?.businessName }</p>
             <p>{retailer?.address}</p>
                 <ul>
@@ -54,7 +67,7 @@ export const Retailer = ({distributorId, retailer}) => {
                         flowers.map(flower => {
                             return (
                              <li>{flower?.flower?.color} {flower?.flower?.species} {flower.flowerPrice} 
-                                 <button onClick={(clickEvent) => PurchaseButton(clickEvent, flower)}>Purchase</button>
+                                 <button className="btn" onClick={(clickEvent) => PurchaseButton(clickEvent, flower)}>Purchase</button>
                              </li>
                             )
                         })
