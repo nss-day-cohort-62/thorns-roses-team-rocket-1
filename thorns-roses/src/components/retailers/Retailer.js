@@ -59,22 +59,15 @@ export const Retailer = ({distributorId, retailer}) => {
 
 
     return <>
-        <li className="m-5">
-            <p>{retailer?.businessName }</p>
-            <p>{retailer?.address}</p>
+        <li className="m-5 pb-10">
+            <header className="text-lg font-bold ">{retailer?.businessName }</header>
+            <div className="flex row gap-10">
+            <div className="">
+                <p>Distributor:</p>
+                <p>{nurseryDistributors[0]?.distributor?.businessName}</p>
+            </div>
                 <ul>
-                    {
-                        flowers.map(flower => {
-                            return (
-                             <li>{flower?.flower?.color} {flower?.flower?.species} {flower.flowerPrice} 
-                                 <button className="btn" onClick={(clickEvent) => PurchaseButton(clickEvent, flower)}>Purchase</button>
-                             </li>
-                            )
-                        })
-                    }
-                </ul>
-            <p>{nurseryDistributors[0]?.distributor?.businessName}</p>
-                <ul>
+                    <p>Nurseries: </p>
                     {
                         nurseryDistributors.map(nurseryDistributor => {
                             return  <li>{nurseryDistributor?.nursery.businessName}</li>
@@ -82,6 +75,21 @@ export const Retailer = ({distributorId, retailer}) => {
                         })
                     }
                 </ul>
+                </div>
+                <ul className="flex row ">
+                    {
+                        flowers.map(flower => {
+                            return (
+                             <li className="mr-8 border-2 border-black rounded flex flex-col items-center">
+                                <img src={flower?.flower?.image} className="h-48 w-56 border border-black"/>
+                                <p className="font-bold">{flower?.flower?.color} {flower?.flower?.species} ${flower.flowerPrice} </p>
+                                 <button className="bg-red-400 rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider mb-2" onClick={(clickEvent) => PurchaseButton(clickEvent, flower)}>Purchase</button>
+                             </li>
+                            )
+                        })
+                    }
+                </ul>
+                <footer className="text-sm">{retailer?.address}</footer >
         </li>
     </>
 }

@@ -4,7 +4,7 @@
       "id": 1,
       "color": "Red",
       "species": "Dahlia",
-      "image": "https://th.bing.com/th/id/R.58f9e57bdf546db266d619818e2bb0ed?rik=F0ceh%2boqVsVpsQ&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f1419%2f7120%2fproducts%2fDahlia_Gallery_Singer_2_.SHUT.jpg%3fv%3d1582222857&ehk=GaKEzyFG9wtnWcvFQzBlfWXeyvKVC5KayOwwSwM8PbU%3d&risl=&pid=ImgRaw&r=0"
+      "image": "https://www.syngentaflowers-us.com/sites/g/files/kgtney846/files/image/import/field_thumbnail_image/syngenta-flowers-pim/image/upload/t_d7_highres/v1625946277/70052845/na/70052845-flower.jpg"
     },
     {
       "id": 2,
@@ -62,10 +62,10 @@
       "flowerMarkup": 1.1
     },
     {
-        "id": 4,
-        "businessName": "Eastern Distribution",
-        "flowerMarkup": 1.1
-      }
+      "id": 4,
+      "businessName": "Eastern Distribution",
+      "flowerMarkup": 1.1
+    }
   ],
   "retailers": [
     {
@@ -175,10 +175,10 @@
       "distributorId": 1
     },
     {
-        "id": 4,
-        "nurseryId": 3,
-        "distributorId": 4
-      }
+      "id": 4,
+      "nurseryId": 3,
+      "distributorId": 4
+    }
   ],
   "customers": [
     {
@@ -329,6 +329,90 @@
       "flowerId": 5,
       "flowerPrice": 4.43,
       "id": 17
+    },
+    {
+      "customerId": 3,
+      "retailerId": 2,
+      "flowerId": 1,
+      "flowerPrice": 4.43,
+      "id": 18
+    },
+    {
+      "customerId": 3,
+      "retailerId": 2,
+      "flowerId": 2,
+      "flowerPrice": 4.43,
+      "id": 19
+    },
+    {
+      "customerId": 3,
+      "retailerId": 3,
+      "flowerId": 2,
+      "flowerPrice": 4.43,
+      "id": 20
+    },
+    {
+      "customerId": 3,
+      "retailerId": 3,
+      "flowerId": 5,
+      "flowerPrice": 4.43,
+      "id": 21
+    },
+    {
+      "customerId": 3,
+      "retailerId": 4,
+      "flowerId": 5,
+      "flowerPrice": 4.43,
+      "id": 22
+    },
+    {
+      "customerId": 3,
+      "retailerId": 1,
+      "flowerId": 5,
+      "flowerPrice": 4.43,
+      "id": 23
+    },
+    {
+      "customerId": 3,
+      "retailerId": 1,
+      "flowerId": 2,
+      "flowerPrice": 4.43,
+      "id": 24
+    },
+    {
+      "customerId": 3,
+      "retailerId": 2,
+      "flowerId": 4,
+      "flowerPrice": 4.43,
+      "id": 25
+    },
+    {
+      "customerId": 3,
+      "retailerId": 1,
+      "flowerId": 5,
+      "flowerPrice": 4.43,
+      "id": 26
+    },
+    {
+      "customerId": 3,
+      "retailerId": 1,
+      "flowerId": 5,
+      "flowerPrice": 4.43,
+      "id": 27
+    },
+    {
+      "customerId": 3,
+      "retailerId": 1,
+      "flowerId": 1,
+      "flowerPrice": 4.43,
+      "id": 28
+    },
+    {
+      "customerId": 3,
+      "retailerId": 1,
+      "flowerId": 1,
+      "flowerPrice": 4.43,
+      "id": 29
     }
   ]
 }

@@ -23,6 +23,7 @@ export const NurseryList = () => {
     
 
     return <>
+    <header className="text-2xl font-body font-bold text-center bg-gray-200 pt-4">Our Nurseries</header>
     <ul className="list flex row ">
     {
         nurseries.map(nursery => 
