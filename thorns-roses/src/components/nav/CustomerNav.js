@@ -18,25 +18,27 @@ export const CustomerNav = () => {
 
 return <>
  
-    <ul className=" fixed w-full flex row justify-evenly font-body bg-gray-300">
+    <ul className=" fixed w-full flex row justify-evenly text-lg font-body border-third border-b-4 lowercase bg-primary text-gray-700">
        
-        <li className="navbar__item">
+        <li className="navbar__item transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300">
 			<Link to="/nurseries">Nurseries</Link>
 			</li>
+            <li> |</li>
 
-			<li className="navbar__item">
+			<li className="navbar__item transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300">
 			<Link to="/distributors">Distributors</Link>
 			</li>
-
-			<li className="navbar__item">
+            <li> |</li>
+			<li className="navbar__item transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300">
 			<Link to="/retailers">Retailers</Link>
 			</li>
-            <li className="navbar__item">
-			<Link to="/cart">My Cart({orderLength})</Link>
+            <li> |</li>
+            <li className="navbar__item transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300">
+			<Link to="/cart">My Cart ({orderLength})</Link>
 			</li>
+            <li> |</li>
 
-
-			<li className="navbar__item navbar__logout">
+			<li className="navbar__item navbar__logout transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300">
                         <Link className="navbar__link" to="" onClick={() => {
                             localStorage.removeItem("thorns_user")
                             navigate("/", {replace: true})

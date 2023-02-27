@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Nanum Myeongjo']
+        body: ['Nanum Myeongjo'],
+        receipt: [`Caveat`]
       },
       colors: {
         primary: '#DEC9C0',

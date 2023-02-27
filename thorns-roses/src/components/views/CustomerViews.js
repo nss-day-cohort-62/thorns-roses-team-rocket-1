@@ -10,7 +10,7 @@ export const CustomerViews = () => {
         <Routes>
             <Route path="/" element={
                 <>
-                    <h1 className="text-center text-4xl font-bold p-8 font-body bg-fourth">Thorns and Roses</h1>
+                    <h1 className="text-center text-6xl text-white font-bold p-8 font-body font-outline-2 img border-third border-b-4">Thorns and Roses</h1>
                     
 
                     <Outlet />

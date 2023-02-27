@@ -21,7 +21,7 @@ export const DistributorList = () => {
 
     return <>
         <header className="text-2xl font-body font-bold text-center bg-gray-200 pt-4">Our Distributors</header>
-    <ul className="list flex row">
+    <ul className="list flex row align-top">
     {
         distributors.map(nurseryDistributor => 
             <Distributor

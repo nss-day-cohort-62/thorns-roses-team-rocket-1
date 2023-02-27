@@ -38,17 +38,19 @@ useEffect(
 
 
 return <>
+<div className="receipt w-1/4 m-10 p-10 text-center flex-col container rounded ml-auto mr-auto">
+   <header className="font-receipt text-4xl">Flower Cart</header>
+<ul className="font-receipt text-2xl ">
 
-<table className="font-body">
-<tr><td>Name</td><td>Total Cost</td><td>Total Quantity</td></tr>
 {
 purchases.map(purchase => {
-    return <tr><td>{purchase?.flower?.color} {purchase?.flower?.species}</td><td>{(purchase.flowerPrice).toFixed(2)}</td><td>{purchase.quantity}</td><td><img className="w-16 h-16" src={purchase?.flower?.image}/></td></tr>
+    return <li className="flex row justify-evenly m-5"><p>{purchase.quantity}</p><p>{purchase?.flower?.color} {purchase?.flower?.species}</p><p>{(purchase.flowerPrice).toFixed(2)}</p></li>
 })
 }
 
-</table>
-
+</ul>
+<footer className="font-receipt text-4xl pt-10">Have a great day! </footer>
+</div>
 
 </>
 
