@@ -29,6 +29,18 @@
       "color": "Purple",
       "species": "Rose",
       "image": "https://2.bp.blogspot.com/-Kp3ZxPLhGSU/T7NGZy_7ilI/AAAAAAAAA6I/I4YFAy8Kikk/s1600/purple+rose.jpg"
+    },
+    {
+      "id": 6,
+      "color": "Blue",
+      "species": "Wisteria",
+      "image": "https://i.etsystatic.com/33333192/r/il/80f537/4601673898/il_1588xN.4601673898_o05r.jpg"
+    },
+    {
+      "id": 7,
+      "color": "Pink",
+      "species": "Rhododendron",
+      "image": "https://mail.berkeleyhort.com/wp-content/uploads/2020/10/rhododendrons.jpg"
     }
   ],
   "nurseries": [
@@ -71,30 +83,51 @@
     {
       "id": 1,
       "businessName": "Flower Shop",
-      "address": "2200 Flower Way",
+      "address": "2200 Flower Way, Nashville, TN",
       "flowerMarkup": 1.15,
       "distributorId": 1
     },
     {
       "id": 2,
       "businessName": "The Lotus",
-      "address": "674 Elvis Flats",
+      "address": "674 Elvis Flats, Savannah, GA",
       "flowerMarkup": 1.15,
       "distributorId": 2
     },
     {
       "id": 3,
       "businessName": "Flowers-R-Us",
-      "address": "0392 Estelle Oval",
+      "address": "0392 Estelle Oval, Nashville, TN",
       "flowerMarkup": 1.15,
-      "distributorId": 3
+      "distributorId": 4
     },
     {
       "id": 4,
       "businessName": "Flowers",
-      "address": "123 Main Street",
+      "address": "123 Main Street, Birmingham, AL",
       "flowerMarkup": 1.15,
       "distributorId": 1
+    },
+    {
+      "id": 5,
+      "businessName": "Garden of Eden",
+      "address": "900 Briar Way, Houston, TX",
+      "flowerMarkup": 1.15,
+      "distributorId": 3
+    },
+    {
+      "id": 5,
+      "businessName": "Sunny Side up",
+      "address": "526 Belair Way, Nashville, TN",
+      "flowerMarkup": 1.15,
+      "distributorId": 4
+    },
+    {
+      "id": 6,
+      "businessName": "Suddenly Seymour",
+      "address": "54 Edwin Street",
+      "flowerMarkup": 1.15,
+      "distributorId": 3
     }
   ],
   "nurseryFlowers": [
@@ -120,13 +153,13 @@
       "id": 4,
       "flowerId": 2,
       "nurseryId": 2,
-      "flowerPrice": 3.5
+      "flowerPrice": 2.5
     },
     {
       "id": 5,
       "flowerId": 5,
       "nurseryId": 2,
-      "flowerPrice": 3.5
+      "flowerPrice": 2.5
     },
     {
       "id": 6,
@@ -138,7 +171,7 @@
       "id": 7,
       "flowerId": 3,
       "nurseryId": 3,
-      "flowerPrice": 3.5
+      "flowerPrice": 4
     },
     {
       "id": 8,
@@ -151,6 +184,18 @@
       "flowerId": 4,
       "nurseryId": 3,
       "flowerPrice": 3.5
+    },
+    {
+      "id": 10,
+      "flowerId": 6,
+      "nurseryId": 3,
+      "flowerPrice": 4.5
+    },
+    {
+      "id": 11,
+      "flowerId": 7,
+      "nurseryId": 2,
+      "flowerPrice": 5.5
     }
   ],
   "nurseryDistributors": [
@@ -168,11 +213,6 @@
       "id": 3,
       "nurseryId": 2,
       "distributorId": 3
-    },
-    {
-      "id": 3,
-      "nurseryId": 2,
-      "distributorId": 1
     },
     {
       "id": 4,
@@ -208,6 +248,13 @@
       "businessName": "Ada Forever",
       "password": "ada",
       "id": 4
+    },
+    {
+      "email": "vi@gmail.com",
+      "name": "Vi Phan",
+      "businessName": "dit bu",
+      "password": "vivi",
+      "id": 5
     }
   ],
   "cart": [
@@ -220,199 +267,59 @@
     },
     {
       "customerId": 2,
-      "retailerId": 1,
-      "flowerId": 5,
+      "retailerId": 3,
+      "flowerId": 3,
       "flowerPrice": 4.43,
       "id": 2
     },
     {
       "customerId": 2,
-      "retailerId": 1,
-      "flowerId": 1,
+      "retailerId": 5,
+      "flowerId": 5,
       "flowerPrice": 4.43,
       "id": 3
     },
     {
       "customerId": 2,
-      "retailerId": 2,
+      "retailerId": 1,
       "flowerId": 1,
       "flowerPrice": 4.43,
       "id": 4
     },
     {
-      "customerId": 2,
+      "customerId": 5,
       "retailerId": 2,
-      "flowerId": 1,
+      "flowerId": 2,
       "flowerPrice": 4.43,
       "id": 5
     },
     {
-      "customerId": 1,
+      "customerId": 5,
       "retailerId": 2,
-      "flowerId": 2,
+      "flowerId": 4,
       "flowerPrice": 4.43,
       "id": 6
     },
     {
-      "customerId": 1,
+      "customerId": 5,
       "retailerId": 2,
-      "flowerId": 4,
+      "flowerId": 1,
       "flowerPrice": 4.43,
       "id": 7
     },
     {
-      "customerId": 1,
-      "retailerId": 3,
-      "flowerId": 5,
-      "flowerPrice": 4.43,
+      "customerId": 2,
+      "retailerId": 5,
+      "flowerId": 7,
+      "flowerPrice": 6.96,
       "id": 8
     },
     {
-      "customerId": 1,
-      "retailerId": 3,
-      "flowerId": 5,
-      "flowerPrice": 4.43,
+      "customerId": 2,
+      "retailerId": 5,
+      "flowerId": 7,
+      "flowerPrice": 6.96,
       "id": 9
-    },
-    {
-      "customerId": 1,
-      "retailerId": 3,
-      "flowerId": 5,
-      "flowerPrice": 4.43,
-      "id": 10
-    },
-    {
-      "customerId": 1,
-      "retailerId": 3,
-      "flowerId": 5,
-      "flowerPrice": 4.43,
-      "id": 11
-    },
-    {
-      "customerId": 1,
-      "retailerId": 3,
-      "flowerId": 5,
-      "flowerPrice": 4.43,
-      "id": 12
-    },
-    {
-      "customerId": 1,
-      "retailerId": 3,
-      "flowerId": 5,
-      "flowerPrice": 4.43,
-      "id": 13
-    },
-    {
-      "customerId": 1,
-      "retailerId": 3,
-      "flowerId": 5,
-      "flowerPrice": 4.43,
-      "id": 14
-    },
-    {
-      "customerId": 1,
-      "retailerId": 3,
-      "flowerId": 5,
-      "flowerPrice": 4.43,
-      "id": 15
-    },
-    {
-      "customerId": 1,
-      "retailerId": 3,
-      "flowerId": 5,
-      "flowerPrice": 4.43,
-      "id": 16
-    },
-    {
-      "customerId": 1,
-      "retailerId": 3,
-      "flowerId": 5,
-      "flowerPrice": 4.43,
-      "id": 17
-    },
-    {
-      "customerId": 3,
-      "retailerId": 2,
-      "flowerId": 1,
-      "flowerPrice": 4.43,
-      "id": 18
-    },
-    {
-      "customerId": 3,
-      "retailerId": 2,
-      "flowerId": 2,
-      "flowerPrice": 4.43,
-      "id": 19
-    },
-    {
-      "customerId": 3,
-      "retailerId": 3,
-      "flowerId": 2,
-      "flowerPrice": 4.43,
-      "id": 20
-    },
-    {
-      "customerId": 3,
-      "retailerId": 3,
-      "flowerId": 5,
-      "flowerPrice": 4.43,
-      "id": 21
-    },
-    {
-      "customerId": 3,
-      "retailerId": 4,
-      "flowerId": 5,
-      "flowerPrice": 4.43,
-      "id": 22
-    },
-    {
-      "customerId": 3,
-      "retailerId": 1,
-      "flowerId": 5,
-      "flowerPrice": 4.43,
-      "id": 23
-    },
-    {
-      "customerId": 3,
-      "retailerId": 1,
-      "flowerId": 2,
-      "flowerPrice": 4.43,
-      "id": 24
-    },
-    {
-      "customerId": 3,
-      "retailerId": 2,
-      "flowerId": 4,
-      "flowerPrice": 4.43,
-      "id": 25
-    },
-    {
-      "customerId": 3,
-      "retailerId": 1,
-      "flowerId": 5,
-      "flowerPrice": 4.43,
-      "id": 26
-    },
-    {
-      "customerId": 3,
-      "retailerId": 1,
-      "flowerId": 5,
-      "flowerPrice": 4.43,
-      "id": 27
-    },
-    {
-      "customerId": 3,
-      "retailerId": 1,
-      "flowerId": 1,
-      "flowerPrice": 4.43,
-      "id": 28
-    },
-    {
-      "customerId": 3,
-      "retailerId": 1,
-      "flowerId": 1,
-      "flowerPrice": 4.43,
-      "id": 29
     }
   ]
 }

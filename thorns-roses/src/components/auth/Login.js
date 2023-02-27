@@ -30,33 +30,33 @@ export const Login = () => {
 
     return (
         <main className="container--login font-body shadow text-center img m-16 p-40 border-8 rounded border-black flex justify-center">
+           <h1 className="font-bold text-white p-10 text-8xl font-outline-2 shadow-lg">Thorns and Roses</h1>
             <section>
                 <form className="bg-gray-200 w-full bg-opacity-50 rounded pb-5 pt-2" onSubmit={handleLogin}>
-                    <h1 className="font-bold text-4xl font-outline-2 shadow-lg">Thorns and Roses</h1>
                     <div className="text-center p-5">
                     <fieldset className="mb-5">
-                        <label htmlFor="inputEmail"> Email address </label>
+                        
                         <input className="text-black rounded" type="email"
                             value={email}
                             onChange={evt => set(evt.target.value)}
-                            placeholder="Email address"
+                            placeholder="email address"
                             required autoFocus />
                     </fieldset>
                     <fieldset>
-                        <label htmlFor="inputPassword"> Password </label>
+                        
                         <input className="text-black rounded" type="password"
                             value={password}
                             onChange={evt => setPassword(evt.target.value)}
-                            placeholder="Password"
+                            placeholder="password"
                             required autoFocus />
                     </fieldset>
                     </div>
                     <fieldset className="flex row justify-center">
-                        <button className="btn mr-4" type="submit">
-                            Sign in
+                        <button className="btn mr-4 transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300" type="submit">
+                            sign in
                         </button>
-                        <button className="link--register ">
-                            <Link className= "btn" to="/register">Not a member yet?</Link>
+                        <button className="link--register transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300 ">
+                            <Link className= "btn " to="/register">sign up</Link>
                      </button>
                     </fieldset>
                 </form>

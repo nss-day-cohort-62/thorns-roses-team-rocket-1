@@ -37,11 +37,12 @@ export const Distributor = ({ name, nurseryId, markUpPrice, distributorId}) => {
             })
             
         }
+        <h3 className="font-bold">Retailers</h3><div className="flex row justify-between">
         { retailers.map(retailer => {
                 return <p>{retailer?.businessName}</p>
             })
         }
-
+</div>
     </li>
     </>
 }

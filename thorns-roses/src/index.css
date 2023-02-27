@@ -1,12 +1,11 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
-
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Nanum+Myeongjo:wght@400;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 .btn{
-    @apply bg-red-400 rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider;
+    @apply bg-red-400 rounded-full py-2 px-3 text-sm font-bold cursor-pointer tracking-wider;
 }
 .img{
     @apply bg-auto bg-[url("https://gardens.si.edu/wp-content/uploads/2021/03/SG20140407_019_2220.jpg")]
@@ -14,7 +13,7 @@
 
     @layer base {
         .font-outline-2 {
-          -webkit-text-stroke: .75px black;
+          -webkit-text-stroke: 1px black;
         }
         .font-outline-4 {
           -webkit-text-stroke: .5px black;
@@ -28,11 +27,17 @@
   @apply bg-gray-200 bg-cover
 }
 .list {
-  @apply font-body justify-center image pb-16 border-b-8 border-fifth
+  @apply font-body justify-center image pb-16 border-b-8 border-third
 }
 .card {
-  @apply m-5 p-5 rounded border border-black bg-primary text-center w-56 h-56 shadow-lg
+  @apply m-5 p-5 rounded border border-black bg-white text-center w-56 h-64 shadow-lg
 }
 .title {
   @apply font-bold text-xl mb-2 border-b border-third
+}
+.receipt {
+    @apply bg-[url("https://pre00.deviantart.net/a532/th/pre/i/2014/077/2/4/old_yellow_paper_by_viny_dewonderful-d7ao4t2.jpg")]
+}
+.badge{
+    @apply  text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2;
 }

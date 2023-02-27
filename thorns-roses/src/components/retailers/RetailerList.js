@@ -22,7 +22,7 @@ export const RetailerList =() => {
     
 
     return <>
-        <ul className="flex-col font-body ml-96">
+        <ul className="flex flex-col justify-center items-center font-body text-gray-800">
             {
                 retailers.map(retailer => 
                     <Retailer
